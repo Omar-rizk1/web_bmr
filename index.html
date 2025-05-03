@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI & Calorie Calculator</title>
+    <link rel="stylesheet" href="Bmr.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>BMI & Calorie Calculator</h1>
+
+        <!-- BMI Calculator Section -->
+        <section class="calculator">
+            <h2>BMI Calculator</h2>
+            <input type="number" id="weight" placeholder="Weight (kg)">
+            <input type="number" id="height" placeholder="Height (cm)">
+            <button onclick="calculateBMI()">Calculate BMI</button>
+            <p id="bmiResult"></p>
+        </section>
+
+        <!-- Calorie Calculator Section -->
+        <section class="calculator">
+            <h2>Calorie Calculator</h2>
+            <input type="number" id="age" placeholder="Age">
+            <input type="number" id="calWeight" placeholder="Weight (kg)">
+            <input type="number" id="calHeight" placeholder="Height (cm)">
+            <select id="activityLevel">
+                <option value="1.2">Sedentary</option>
+                <option value="1.375">Lightly Active</option>
+                <option value="1.55">Moderately Active</option>
+                <option value="1.725">Very Active</option>
+                <option value="1.9">Super Active</option>
+            </select>
+            <button onclick="calculateCalories()">Calculate Calories</button>
+            <p id="caloriesResult"></p>
+        </section>
+    </div>
+    <script src="bmr.js"></script>
+</body>
+
+</html>
